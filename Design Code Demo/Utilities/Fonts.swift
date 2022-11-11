@@ -34,8 +34,8 @@ extension Font {
         Font.custom("SFProDisplay-Semibold", size: 14)
     }
     
-    public static var postCaption: Font {
-        Font.custom("SFProDisplay-Semibold", size: 9)
+    public static var rcaption: Font {
+        Font.custom("SFProDisplay-Semibold", size: 10)
     }
 
 }

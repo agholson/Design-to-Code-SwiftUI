@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751AA832291EC1C400AAB110 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751AA831291EC1C400AAB110 /* PostCard.swift */; };
 		7598B21B290F44A7007FAE10 /* Design_Code_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598B21A290F44A7007FAE10 /* Design_Code_DemoApp.swift */; };
 		7598B21D290F44A7007FAE10 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598B21C290F44A7007FAE10 /* ProfileView.swift */; };
 		7598B21F290F44A8007FAE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7598B21E290F44A8007FAE10 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		751AA831291EC1C400AAB110 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
 		7598B217290F44A7007FAE10 /* Design Code Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Design Code Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7598B21A290F44A7007FAE10 /* Design_Code_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design_Code_DemoApp.swift; sourceTree = "<group>"; };
 		7598B21C290F44A7007FAE10 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				7598B21C290F44A7007FAE10 /* ProfileView.swift */,
+				751AA831291EC1C400AAB110 /* PostCard.swift */,
 				75A8A925291A7526001E19DB /* MetricCardBar.swift */,
 				75C0026A291893B700EF69A6 /* MetricCard.swift */,
 				75A8A927291A794D001E19DB /* SubHeading.swift */,
@@ -145,6 +148,8 @@
 			dependencies = (
 			);
 			name = "Design Code Demo";
+			packageProductDependencies = (
+			);
 			productName = "Design Code Demo";
 			productReference = 7598B217290F44A7007FAE10 /* Design Code Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +178,9 @@
 				Base,
 			);
 			mainGroup = 7598B20E290F44A7007FAE10;
+			packageReferences = (
+				751AA833291ECF9F00AAB110 /* XCRemoteSwiftPackageReference "wrap-stack" */,
+			);
 			productRefGroup = 7598B218290F44A7007FAE10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,6 +217,7 @@
 				7598B234290F4869007FAE10 /* Fonts.swift in Sources */,
 				7598B21B290F44A7007FAE10 /* Design_Code_DemoApp.swift in Sources */,
 				75A8A928291A794D001E19DB /* SubHeading.swift in Sources */,
+				751AA832291EC1C400AAB110 /* PostCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +420,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		751AA833291ECF9F00AAB110 /* XCRemoteSwiftPackageReference "wrap-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftuilib/wrap-stack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 7598B20F290F44A7007FAE10 /* Project object */;
 }

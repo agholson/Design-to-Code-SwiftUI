@@ -20,7 +20,7 @@ struct SubHeading: View {
                 .font(.rsubheadline)
             // Caption goes here
             Text(caption)
-                .font(.postCaption)
+                .font(.rcaption)
         }
         .padding(.top, 20)
        
