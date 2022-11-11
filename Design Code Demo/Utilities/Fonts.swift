@@ -19,13 +19,23 @@ import SwiftUI
  */
 extension Font {
     // Override the original title
-    public static var title: Font {
+    public static var rtitle: Font {
         // No need for return keyword, because assumed with a single statement
         Font.custom("SFProDisplay-Bold", size: 28)
     }
     
-    public static var subheadline: Font {
+    public static var metricNumber: Font {
+        Font.custom("SFProDisplay-Bold", size: 14)
+    }
+    
+    public static var metricCaption = Font.custom("SFProText-Regular", size: 9)
+    
+    public static var rsubheadline: Font {
         Font.custom("SFProDisplay-Semibold", size: 14)
+    }
+    
+    public static var postCaption: Font {
+        Font.custom("SFProDisplay-Semibold", size: 9)
     }
 
 }

@@ -4,8 +4,8 @@ Based on the module six of the Code With Chris Design course:
 
 # Custom Fonts
 You can implement your own custom font, then use them throughout the project by superceding the standard fonts. 
-If you use some of the same font names like title, header, etc. then you can change the font used for these in a
-single place in your entire app. 
+If you use some of the same font names like title, header, etc. then you can change the similar font used for these in a
+single place in your entire app. Note that you can replace the default title, but it will break your previews. 
 
 Note the Extension file that enables this `Utilities/Fonts.swift`:
 ```
@@ -20,7 +20,7 @@ Note the Extension file that enables this `Utilities/Fonts.swift`:
  */
 extension Font {
     
-    static var title = Font.custom("SFProDisplay-Bold", size: 28)
+    static var myTitle = Font.custom("SFProDisplay-Bold", size: 28)
     
 }
 ```

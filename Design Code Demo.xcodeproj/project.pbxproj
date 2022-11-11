@@ -16,6 +16,9 @@
 		7598B22F290F4659007FAE10 /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7598B22B290F4659007FAE10 /* SFProDisplay-Regular.ttf */; };
 		7598B230290F4659007FAE10 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7598B22C290F4659007FAE10 /* SFProText-Regular.ttf */; };
 		7598B234290F4869007FAE10 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598B233290F4869007FAE10 /* Fonts.swift */; };
+		75A8A926291A7526001E19DB /* MetricCardBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A8A925291A7526001E19DB /* MetricCardBar.swift */; };
+		75A8A928291A794D001E19DB /* SubHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A8A927291A794D001E19DB /* SubHeading.swift */; };
+		75C0026B291893B700EF69A6 /* MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0026A291893B700EF69A6 /* MetricCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +33,11 @@
 		7598B22C290F4659007FAE10 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
 		7598B231290F4739007FAE10 /* Design-Code-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Design-Code-Demo-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7598B233290F4869007FAE10 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		75A8A925291A7526001E19DB /* MetricCardBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCardBar.swift; sourceTree = "<group>"; };
+		75A8A927291A794D001E19DB /* SubHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHeading.swift; sourceTree = "<group>"; };
 		75AAA4F32911F19300D9ADE5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		75AAA4F72911FF5300D9ADE5 /* colorSets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorSets.png; sourceTree = "<group>"; };
+		75C0026A291893B700EF69A6 /* MetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				7598B21C290F44A7007FAE10 /* ProfileView.swift */,
+				75A8A925291A7526001E19DB /* MetricCardBar.swift */,
+				75C0026A291893B700EF69A6 /* MetricCard.swift */,
+				75A8A927291A794D001E19DB /* SubHeading.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,8 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7598B21D290F44A7007FAE10 /* ProfileView.swift in Sources */,
+				75A8A926291A7526001E19DB /* MetricCardBar.swift in Sources */,
+				75C0026B291893B700EF69A6 /* MetricCard.swift in Sources */,
 				7598B234290F4869007FAE10 /* Fonts.swift in Sources */,
 				7598B21B290F44A7007FAE10 /* Design_Code_DemoApp.swift in Sources */,
+				75A8A928291A794D001E19DB /* SubHeading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
