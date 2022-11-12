@@ -1,6 +1,9 @@
 #  Design SwiftUI Figma Design to Demo Code
 Based on the module six of the Code With Chris Design course:
  https://learn.codewithchris.com/courses/take/design/lessons/26502604-lesson-6-implementing-profile-screens-part-2 
+ 
+ Builds the following app:
+ ![Profile View](img/design.png)
 
 # Custom Fonts
 You can implement your own custom font, then use them throughout the project by superceding the standard fonts. 
@@ -39,3 +42,8 @@ Color("main-blue")
     .ignoresSafeArea()
 ```
 
+# Word Clouds
+Under the HashtagCloud.swift file is an implementation of a Word-cloud, which uses a wrapping HStack in order to implement this view.
+This depends on the external dependency: https://github.com/diniska/swiftui-wrapping-stack 
+
+![Word Cloud](img/wordCloud.png)

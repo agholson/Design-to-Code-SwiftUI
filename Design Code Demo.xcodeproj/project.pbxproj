@@ -20,6 +20,8 @@
 		75A8A926291A7526001E19DB /* MetricCardBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A8A925291A7526001E19DB /* MetricCardBar.swift */; };
 		75A8A928291A794D001E19DB /* SubHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A8A927291A794D001E19DB /* SubHeading.swift */; };
 		75C0026B291893B700EF69A6 /* MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0026A291893B700EF69A6 /* MetricCard.swift */; };
+		75EFA20F29200EA4002F65AC /* HashtagCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EFA20E29200EA4002F65AC /* HashtagCloud.swift */; };
+		75EFA212292028C4002F65AC /* WrappingStack in Frameworks */ = {isa = PBXBuildFile; productRef = 75EFA211292028C4002F65AC /* WrappingStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		75AAA4F32911F19300D9ADE5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		75AAA4F72911FF5300D9ADE5 /* colorSets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorSets.png; sourceTree = "<group>"; };
 		75C0026A291893B700EF69A6 /* MetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCard.swift; sourceTree = "<group>"; };
+		75EFA20E29200EA4002F65AC /* HashtagCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagCloud.swift; sourceTree = "<group>"; };
+		75EFA213292034C8002F65AC /* design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = design.png; sourceTree = "<group>"; };
+		75EFA21429203519002F65AC /* wordCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wordCloud.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75EFA212292028C4002F65AC /* WrappingStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +126,7 @@
 				75A8A925291A7526001E19DB /* MetricCardBar.swift */,
 				75C0026A291893B700EF69A6 /* MetricCard.swift */,
 				75A8A927291A794D001E19DB /* SubHeading.swift */,
+				75EFA20E29200EA4002F65AC /* HashtagCloud.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				75AAA4F72911FF5300D9ADE5 /* colorSets.png */,
+				75EFA21429203519002F65AC /* wordCloud.png */,
+				75EFA213292034C8002F65AC /* design.png */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -149,6 +158,7 @@
 			);
 			name = "Design Code Demo";
 			packageProductDependencies = (
+				75EFA211292028C4002F65AC /* WrappingStack */,
 			);
 			productName = "Design Code Demo";
 			productReference = 7598B217290F44A7007FAE10 /* Design Code Demo.app */;
@@ -180,6 +190,7 @@
 			mainGroup = 7598B20E290F44A7007FAE10;
 			packageReferences = (
 				751AA833291ECF9F00AAB110 /* XCRemoteSwiftPackageReference "wrap-stack" */,
+				75EFA210292028C4002F65AC /* XCRemoteSwiftPackageReference "swiftui-wrapping-stack" */,
 			);
 			productRefGroup = 7598B218290F44A7007FAE10 /* Products */;
 			projectDirPath = "";
@@ -215,6 +226,7 @@
 				75A8A926291A7526001E19DB /* MetricCardBar.swift in Sources */,
 				75C0026B291893B700EF69A6 /* MetricCard.swift in Sources */,
 				7598B234290F4869007FAE10 /* Fonts.swift in Sources */,
+				75EFA20F29200EA4002F65AC /* HashtagCloud.swift in Sources */,
 				7598B21B290F44A7007FAE10 /* Design_Code_DemoApp.swift in Sources */,
 				75A8A928291A794D001E19DB /* SubHeading.swift in Sources */,
 				751AA832291EC1C400AAB110 /* PostCard.swift in Sources */,
@@ -430,7 +442,23 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		75EFA210292028C4002F65AC /* XCRemoteSwiftPackageReference "swiftui-wrapping-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diniska/swiftui-wrapping-stack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75EFA211292028C4002F65AC /* WrappingStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75EFA210292028C4002F65AC /* XCRemoteSwiftPackageReference "swiftui-wrapping-stack" */;
+			productName = WrappingStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7598B20F290F44A7007FAE10 /* Project object */;
 }

@@ -20,11 +20,21 @@ struct ProfileView: View {
                 .ignoresSafeArea()
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading) {
+                    // MARK: Profile Analytics & Heading
                     Group {
-                        Text("Profile Analytics")
-                            .font(.rtitle)
-                        Text("@codewithchris")
-                            .font(.rsubheadline)
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text("Profile Analytics")
+                                    .font(.rtitle)
+                                Text("@codewithchris")
+                                    .font(.rsubheadline)
+                            }
+                            Spacer()
+                            // Logo
+                            Image("logo")
+                                .clipShape(Circle())
+                                .frame(height: 60)
+                        }
                     }
                     
                     Spacer()
@@ -86,9 +96,9 @@ struct ProfileView: View {
                                     .font(.rcaption)
                                     .foregroundColor(Color("main-blue"))
                             }
-
-                              
                         }
+                        // Display the hashtags here
+                        HashtagCloud()
                     }
                     
                     // MARK: - Top 5 Posts by
@@ -112,6 +122,29 @@ struct ProfileView: View {
                         }
                         
                     }
+                    
+                    // MARK: - Common Hashtags of Top 5 Posts
+                    Group {
+                        // Display the title and icon
+                        HStack {
+                            SubHeading(subheadline: "Common Hashtags", caption: "Of the top 5 Posts")
+                            
+                            Spacer()
+                            Image(systemName: "doc.on.doc.fill")
+                                .foregroundColor(Color("main-blue"))
+                            
+                            Button {
+                                // TODO: Button action
+                            } label: {
+                                Text("Copy Hashtags")
+                                    .font(.rcaption)
+                                    .foregroundColor(Color("main-blue"))
+                            }
+                        }
+                        // Display the hashtags here
+                        HashtagCloud()
+                    }
+                    
                     Spacer()
                     
                     
